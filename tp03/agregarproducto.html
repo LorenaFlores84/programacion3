@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Agregar Producto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="estiloscss/estiloagregarproducto.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    
+
+    <div id="agregar">AGREGAR PRODUCTOS</div>
+
+    <form id="formPersonal">
+        <p>
+            <label for="">Codigo:</label>
+            <input type="text" id="codigo" />
+        </p>
+        <p>
+            <label for="">Nombre:</label>
+            <input type="text" id="nombre" />
+        </p>
+        <p>
+            <label for="">Marca:</label>
+            <input type="text" id="marca" />
+        </p>
+        <p>
+            <label for="">Precio:</label>
+            <input type="text" id="precio" />
+        </p>
+        
+    </form>
+    <div id="main-container">
+    <button onclick="enviarDatos()">Agregar</button>
+    </div> 
+    <h3 id="resultado"></h3>
+
+    <script>
+       
+        function enviarDatos() {
+
+            let codigo= document.getElementById("codigo").value;
+            let nombre = document.getElementById("nombre").value;
+            let marca = document.getElementById("marca").value;
+            let precio = document.getElementById("precio").value;
+
+            let request = { codigo: codigo, nombre: nombre, marca: marca, precio: precio };
+
+            //document.getElementById("resultado").innerHTML = JSON.stringify(request);
+
+            setTimeout(function() {
+                document.getElementById("resultado").innerHTML = JSON.stringify(request) + "... Agregado exitosamente";
+            }, 3000);
+
+            alert("El producto fue agregado con exito");
+
+        }
+    </script>
+</body>
+
+</html>

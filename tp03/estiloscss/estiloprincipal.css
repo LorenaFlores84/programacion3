@@ -1,0 +1,19 @@
+body{ 
+    background-color: #FDEDEC;
+    font-family: Arial;
+}
+#main-container{
+    margin: 50px auto;
+}
+
+
+#miprimeraplicacion {
+    background-color: #BB8FCE;
+    font-size: 35px;
+    text-align: center;
+  }
+#misproductosyservicios {
+    font-size: 15px;
+    text-align: left;
+    width: 15%;
+  }

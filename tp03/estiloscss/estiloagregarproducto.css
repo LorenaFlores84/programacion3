@@ -1,0 +1,21 @@
+body{
+    background-color: #FDEDEC;
+    font-family: Arial;
+}
+#agregar{
+    font-size: 40px;
+    text-align: center; 
+}
+
+form{
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+}
+button{
+    background-color: #BB8FCE;
+}
+#main-container{
+    padding-top: 100px;
+    text-align: center;
+}
